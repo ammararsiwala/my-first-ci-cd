@@ -1,8 +1,8 @@
-import main
+import hello
 
 def test_output(capfd):
     # Run the script
-    main.main()
+    hello.main()
     
     # Capture the output
     out, err = capfd.readouterr()
