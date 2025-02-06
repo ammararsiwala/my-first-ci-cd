@@ -1,6 +1,8 @@
 def main():
-     print("Hello World")
-     print("I MADE MY FIRST CHANGE")
-     print("NOW LET'S SEE IF I GET AN ERROR OR NO")
+    print("Hello World")
+    print("I MADE MY FIRST CHANGE")
+    print("This is a linting example")
+
+
 if __name__ == "__main__":
-  main()
+    main()
