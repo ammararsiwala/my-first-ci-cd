@@ -22,6 +22,17 @@ jobs:
       - name: Run tests
         run: pytest
 
+      - name: Measuring Code Coverage
+        run : |
+             pip install coverage
+             coverage run -m pytest
+             coverage report
+             coverage xml
+      - name: Upoad to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+            file: coverage.xml
+
       - name: Lint Code
         run: pip install flake8 && flake8 .
 
