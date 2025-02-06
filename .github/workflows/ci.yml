@@ -1,9 +1,7 @@
 name: My first CI/CD pipeline
 
 on:
-  push:
-    paths:
-      - "**.py"
+  push
 
 jobs:
   build:
