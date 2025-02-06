@@ -23,3 +23,11 @@ jobs:
 
       - name: Run tests
         run: pytest
+
+      - name: Build Docker Images
+        run : docker build -t my-python-app .
+
+      - name: Run Docker Images
+        run : docker run my-python-app
+
+    
