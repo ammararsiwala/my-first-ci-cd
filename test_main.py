@@ -8,4 +8,4 @@ def test_output(capfd):
     out, err = capfd.readouterr()
     
     # Check the output
-    assert out == "Hello World\nI MADE MY FIRST CHANGE\n"
+    assert out == "Hello World\nI MADE MY FIRST CHANGE\nNOW LET'S SEE IF I GET AN ERROR OR NO"
