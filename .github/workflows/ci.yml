@@ -36,6 +36,10 @@ jobs:
       - name: Lint Code
         run: pip install flake8 && flake8 .
 
+      - name: Security Scan using Bandit
+        run: pip install bandit
+              bandit -r .
+
       - name: Build Docker Images
         run : docker build -t my-python-app .
 
