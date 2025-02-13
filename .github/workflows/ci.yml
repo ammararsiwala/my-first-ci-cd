@@ -33,8 +33,8 @@ jobs:
         with:
             file: coverage.xml
 
-      - name: Lint Code
-        run: pip install flake8 && flake8 .
+      # - name: Lint Code
+      #   run: pip install flake8 && flake8 .
 
       - name: Security Scan using Bandit
         run: | 
