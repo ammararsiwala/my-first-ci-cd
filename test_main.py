@@ -1,6 +1,5 @@
 import hello
 
-
 def test_output(capfd):
     # Run the script
     hello.main()
@@ -8,7 +7,7 @@ def test_output(capfd):
     # Capture the output
     out, err = capfd.readouterr()
 
-    # Check the output
+    # Check the output using pytest's assert statement
     assert out.strip() == (
         "Hello World\n"
         "I MADE MY FIRST CHANGE\n"
