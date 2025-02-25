@@ -1,0 +1,21 @@
+name: Test Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      example_input:
+        description: "Example input"
+        required: true
+        default: "test.py"
+        type: choice
+        options:
+          - "test.py"
+          - "example.py"
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print selected input
+      run: echo "Selected input:${{ github.event.inputs.example_input }}"
